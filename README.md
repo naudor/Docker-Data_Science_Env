@@ -27,4 +27,7 @@ Note : in this setting, TensorFlow will be CPU enabled only.
 docker run -d -v /$(pwd)/:/home/jovyan/work \
            -p 8888:8888 gaarv/jupyter-keras start-notebook.sh --NotebookApp.token=''
 ```
+
+docker run -d -v <scripts_folder>:/home/jovyan/work -p 8888:8888 <tag> start-notebook.sh --NotebookApp.token=''
+
 This will allow to have the current working directory path mounted directly into the guest and with no password
