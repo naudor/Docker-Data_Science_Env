@@ -10,6 +10,7 @@ RUN ln -snf /bin/bash /bin/sh
 USER jovyan
 
 RUN pip install pandas-datareader
+RUN pip install --upgrade keras
 RUN pip install --upgrade tensorflow 
 #\
 #&& pip install --upgrade --no-deps git+git://github.com/fchollet/keras.git
